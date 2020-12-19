@@ -7,7 +7,6 @@
 body {
   background: black;
   color: white;
-  overflow: hidden;
 }
 
 @font-face {
@@ -72,6 +71,8 @@ video {
   top: -10px;
   z-index: 1;
   height: 400px;
+  width: 100vw;
+  object-fit: cover;
 }
 
 .lista-nav-info {
