@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Netflix;
   box-sizing: border-box;
 }
 body {
@@ -80,7 +80,7 @@ video {
   justify-content: center;
   gap: 20px;
   position: relative;
-  top: -80px;
+  top: -90px;
   z-index: 2;
 }
 
@@ -97,8 +97,11 @@ video {
   display: flex;
   justify-content: space-around;
   position: relative;
-  top: -60px;
+  top: -65px;
+  align-items: center;
   z-index: 2;
+
+  background-image: linear-gradient(to bottom, transparent 50%, black 90%);
 }
 
 .icons-info-video > div {
@@ -112,6 +115,55 @@ video {
   color: black;
   width: 100px;
   display: flex;
+  height: 30px;
   align-items: center;
   justify-content: center;
+}
+
+/* Popular sections */
+
+.info-video {
+  height: 0;
+}
+
+.section > h4 {
+  margin-bottom: 10px;
+}
+.section {
+  margin-bottom: 10px;
+  padding: 5px 12px 0px 12px;
+}
+
+.grid-movies > div:first-child {
+  margin-top: 10px;
+}
+
+.grid-movies > div:last-child {
+  margin-bottom: 20px;
+}
+
+.movies {
+  display: flex;
+  gap: 8px;
+  overflow: scroll;
+}
+
+.movies > img {
+  height: 150px;
+}
+
+footer {
+  display: flex;
+  width: 87%;
+  gap: 10px;
+  justify-content: space-around;
+  margin: auto;
+  font-size: 0.7em;
+  margin-bottom: 5px;
+}
+
+.f-icon {
+  display: flex;
+  flex-direction: column-reverse;
+  cursor: pointer;
 }
